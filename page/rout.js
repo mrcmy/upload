@@ -17,7 +17,7 @@ router.post('/img',upload.single('test'),(req,res)=>{
     let time=Date.now()+parseInt(Math.random()*999)+parseInt(Math.random()*2222);
     //拓展名
     let extname=req.file.mimetype.split('/')[1]
-    //拼接成图片名
+    //拼接成图片名 
     let keepname=time+'.'+extname
     console.log(keepname);
     //三个参数
